@@ -39,6 +39,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Kombin Yap", systemImage: "wand.and.stars")
                 }
+
+            VirtualTryOnView()
+                .tabItem {
+                    Label("Sanal Kabin", systemImage: "figure.stand")
+                }
         }
     }
 

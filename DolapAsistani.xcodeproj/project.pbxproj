@@ -12,6 +12,7 @@
 		A10000030000000000000001 /* ClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000001 /* ClothingItem.swift */; };
 		A10000040000000000000001 /* WardrobeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000040000000000000001 /* WardrobeView.swift */; };
 		A10000050000000000000001 /* OutfitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000050000000000000001 /* OutfitView.swift */; };
+		A10000060000000000000001 /* VirtualTryOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000070000000000000001 /* VirtualTryOnView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A20000040000000000000001 /* WardrobeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeView.swift; sourceTree = "<group>"; };
 		A20000050000000000000001 /* OutfitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitView.swift; sourceTree = "<group>"; };
 		A20000060000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000070000000000000001 /* VirtualTryOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualTryOnView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 				A20000030000000000000001 /* ClothingItem.swift */,
 				A20000040000000000000001 /* WardrobeView.swift */,
 				A20000050000000000000001 /* OutfitView.swift */,
+				A20000070000000000000001 /* VirtualTryOnView.swift */,
 				A20000060000000000000001 /* Info.plist */,
 				A40000020000000000000001 /* Products */,
 			);
@@ -125,6 +128,7 @@
 				A10000030000000000000001 /* ClothingItem.swift in Sources */,
 				A10000040000000000000001 /* WardrobeView.swift in Sources */,
 				A10000050000000000000001 /* OutfitView.swift in Sources */,
+				A10000060000000000000001 /* VirtualTryOnView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
