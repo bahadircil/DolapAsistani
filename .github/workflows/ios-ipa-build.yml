@@ -1,0 +1,37 @@
+name: iOS IPA Build (Sideloadly / iPhone 11)
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-ipa:
+    runs-on: macos-14
+    steps:
+      - name: Kodu İndir (Checkout)
+        uses: actions/checkout@v4
+
+      - name: Xcode ile Derle (Unsigned iOS Device Build)
+        run: |
+          xcodebuild clean build \
+            -project DolapAsistani.xcodeproj \
+            -target DolapAsistani \
+            -configuration Release \
+            -sdk iphoneos \
+            SYMROOT="$(pwd)/build" \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: .app Paketini .ipa Dosyasına Dönüştür
+        run: |
+          mkdir -p Payload
+          cp -r build/Release-iphoneos/DolapAsistani.app Payload/
+          zip -r DolapAsistani.ipa Payload
+
+      - name: DolapAsistani.ipa Dosyasını Yükle
+        uses: actions/upload-artifact@v4
+        with:
+          name: DolapAsistani-IPA
+          path: DolapAsistani.ipa

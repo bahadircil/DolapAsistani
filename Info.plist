@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Dijital dolabınıza kıyafet fotoğrafı ekleyebilmek için fotoğraf galerisine erişim izni gerekiyor.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Kıyafetlerinizin fotoğrafını doğrudan çekip dolabınıza ekleyebilmek için kamera erişim izni gerekiyor.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Bulunduğunuz konumdaki hava durumuna göre kombin önerisi yapabilmek için konum izni gerekiyor.</string>
+</dict>
+</plist>
